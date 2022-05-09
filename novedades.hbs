@@ -40,5 +40,21 @@
       </table>
     </div>
   </div>
+  // bucle each de Handlebars para recorrer el array de novedades
+  <tbody>
+    {{#each novedades}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{titulo}}</td>
+      <td class="text-center">
+        <a href="#" title="Editar" class="btn btn-sm btn-secondary">
+        <i class="fa fa-pencil"></i></a>
+        <a href="#" title="Eliminar" class="btn btn-sm btn-secondary">
+        <i class="fa fa-trash"></i></a>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+
 </div>
             
